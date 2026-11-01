@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Little raccoon face icon">
+  <defs><linearGradient id="g" x2=".8" y2="1"><stop stop-color="#e3c0d3"/><stop offset="1" stop-color="#95818d"/></linearGradient></defs>
+  <circle cx="60" cy="60" r="56" fill="#f8eef1" stroke="#2c514c" stroke-width="3"/>
+  <path d="M24 49 17 16 46 33M96 49l7-33-29 17" fill="#576066" stroke="#122932" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M30 39 24 27 41 37M90 39l6-12-17 10" fill="#ee85b5"/>
+  <path d="M14 58c2-25 21-39 46-39s44 14 46 39l-5 20c-6 20-21 29-41 29S25 98 19 78Z" fill="url(#g)" stroke="#122932" stroke-width="3"/>
+  <path d="M18 59c18-20 30-7 42-9 12 2 24-11 42 9-2 16-10 26-25 26-7-1-14-6-17-9-3 3-10 8-17 9-15 0-23-10-25-26Z" fill="#2c514c"/>
+  <ellipse cx="43" cy="65" rx="8" ry="10" fill="#f7edeb"/><ellipse cx="77" cy="65" rx="8" ry="10" fill="#f7edeb"/>
+  <circle cx="44" cy="65" r="4" fill="#122932"/><circle cx="76" cy="65" r="4" fill="#122932"/>
+  <path d="m52 84 8 7 8-7Z" fill="#122932"/><path d="M50 95q10 7 20 0" fill="none" stroke="#122932" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 88 13 86M92 88l15-2" fill="none" stroke="#122932" stroke-width="2" stroke-linecap="round"/>
+  <path d="m91 22 3-9 3 9 9 3-9 3-3 9-3-9-9-3Z" fill="#f4a5ae" stroke="#122932" stroke-width="1"/>
+</svg>
