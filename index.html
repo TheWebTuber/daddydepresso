@@ -1,22 +1,25 @@
 <!doctype html>
-<html lang="en" data-theme="grove">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#122932">
-  <meta name="description" content="Meet Daddy Depresso: story-loving gamer, tabletop player, Dungeon Master, and Dream Drops Crew raccoon. Browse his adventures, streams, and GM inquiries.">
+  <meta name="description" content="Meet Daddy Depresso, a story-driven gamer, tabletop player and Game Master in the Dream Drops Crew. Discover his adventures, livestreams and GM contact information.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Daddy Depresso | The Raccoon's Little Stage">
-  <meta property="og:description" content="Story-driven games, tabletop tales, a little magic, and one suspiciously missing sandwich. Meet Daddy Depresso of Dream Drops Crew.">
+  <meta property="og:title" content="Daddy Depresso | Stories, Games & a Raccoon">
+  <meta property="og:description" content="A personal corner for stories, tabletop adventures, games with friends and the occasional stolen sandwich.">
   <meta property="og:image" content="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Daddy Depresso | The Raccoon's Little Stage">
-  <meta name="twitter:description" content="A raccoon, a story, a tabletop, and the occasional stolen sandwich.">
-  <title>Daddy Depresso | The Raccoon's Little Stage</title>
-  <link rel="icon" type="image/svg+xml" href="img/raccoon-mark.svg">
+  <meta name="twitter:title" content="Daddy Depresso | Stories, Games & a Raccoon">
+  <meta name="twitter:description" content="A little corner of the internet for a raccoon, a good game, and a memorable story.">
+  <meta name="twitter:image" content="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj">
+  <title>Daddy Depresso | Stories, Games & a Raccoon</title>
+  <!-- His actual YouTube profile picture is used everywhere, including the browser favicon. -->
+  <link rel="icon" type="image/jpeg" href="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj">
+  <link rel="apple-touch-icon" href="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,400,30;9..144,500,30;9..144,600,30;9..144,700,30&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/youtube-config.js"></script>
   <script defer src="js/site.js"></script>
@@ -24,114 +27,117 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page-glow" aria-hidden="true"></div>
   <header class="site-header">
-    <div class="shell header-inner">
-      <a href="#home" class="brand" aria-label="Daddy Depresso homepage">
-        <span class="brand-icon"><img src="img/raccoon-mark.svg" alt="" width="42" height="42"></span>
-        <span class="brand-label"><strong>Daddy Depresso</strong><small>the raccoon's little stage</small></span>
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Daddy Depresso — home">
+        <span class="brand-photo"><img src="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj" alt="" width="45" height="45"></span>
+        <span class="brand-text"><strong>Daddy Depresso</strong><small>Games · Stories · Tabletop</small></span>
       </a>
+      <button type="button" class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="main-nav" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#stories">Stories</a>
-        <a href="#streams">Streams</a>
-        <a href="#card-trick">Card trick</a>
-        <a href="#contact">Contact</a>
+        <a href="#stories">At the table</a>
+        <a href="#streams">Videos</a>
+        <a href="#card-trick">A little magic</a>
+        <a href="#contact" class="nav-contact">GM inquiries <span aria-hidden="true">↗</span></a>
       </nav>
-      <div class="header-actions">
-        <div class="theme-switcher" role="group" aria-label="Choose a color theme">
-          <button type="button" class="theme-dot theme-grove" data-theme-target="grove" aria-label="Mystic Grove theme" title="Mystic Grove" aria-pressed="true"></button>
-          <button type="button" class="theme-dot theme-dusk" data-theme-target="dusk" aria-label="Soft Spell theme" title="Soft Spell" aria-pressed="false"></button>
-          <button type="button" class="theme-dot theme-rose" data-theme-target="rose" aria-label="Raccoon Rose theme" title="Raccoon Rose" aria-pressed="false"></button>
-        </div>
-        <button type="button" class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
-      </div>
     </div>
   </header>
 
   <main id="main">
-    <section id="home" class="hero shell">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="tiny-star" aria-hidden="true">✦</span> A familiar face from <a href="https://creatorpromote.com/dreamdropscrew" target="_blank" rel="noopener noreferrer">Dream Drops Crew</a></div>
-        <h1>Come for the <em>story.</em><br>Stay for the <span class="accent-word">trouble.</span></h1>
-        <p class="hero-lead">Hey, I'm <strong>Daddy Depresso</strong> — a story-game fan, tabletop player, and Game Master with a soft spot for a good adventure and a well-timed surprise.</p>
-        <p class="hero-small">It's all fun and games until a raccoon appears from your blind spot and makes off with your sandwich.</p>
-        <div class="hero-cta">
-          <a class="button button-primary" href="#stories">Explore the stories <span aria-hidden="true">↗</span></a>
-          <a class="button button-outline" href="mailto:josephpenax@gmail.com?subject=Game%20Master%20Inquiry">Ask about a game <span aria-hidden="true">✉</span></a>
+    <section id="home" class="intro container">
+      <div class="intro-copy">
+        <span class="eyebrow"><span class="small-star">✦</span> Welcome to my little corner</span>
+        <h1>Hey, I'm <em>Daddy Depresso.</em></h1>
+        <p class="intro-lead">A raccoon with a love for good stories, games with friends, and the little moments that make an adventure memorable.</p>
+        <p class="intro-body">Sometimes I'm making choices as a player. Other times I'm behind the screen as a Game Master, finding out what happens when everyone makes choices of their own.</p>
+        <div class="intro-actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/@daddydepresso" target="_blank" rel="noopener noreferrer">Visit my YouTube <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-light" href="#stories">See my adventures</a>
         </div>
-        <div class="hero-chips" aria-label="Creator interests"><span>✧ Story-driven games</span><span>⚄ Tabletop RPGs</span><span>✦ Friendly chaos</span></div>
+        <p class="crew-note">Also part of the <a href="https://creatorpromote.com/dreamdropscrew" target="_blank" rel="noopener noreferrer">Dream Drops Crew <span aria-hidden="true">↗</span></a></p>
       </div>
-      <div class="hero-art" aria-label="Daddy Depresso's creator profile">
-        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
-        <div class="hero-card-shadow" aria-hidden="true"></div>
-        <div class="hero-profile-card">
-          <div class="card-star" aria-hidden="true">✧</div>
-          <div class="profile-frame">
-            <img id="profile-photo" src="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj" alt="Daddy Depresso's YouTube profile picture" width="260" height="260" loading="eager" referrerpolicy="no-referrer" data-fallback="img/raccoon-mark.svg" onerror="this.onerror=null;this.src=this.dataset.fallback">
+      <div class="portrait-area">
+        <div class="portrait-mat">
+          <div class="portrait-heading">A LITTLE INTRODUCTION <span>✧</span></div>
+          <div class="portrait-ring">
+            <img id="profile-photo" src="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj" alt="Daddy Depresso's original raccoon YouTube profile picture" width="268" height="268">
           </div>
-          <span class="profile-eyebrow">YOUR LOCAL STORY RACCOON</span>
-          <h2>Daddy Depresso</h2>
-          <p>Player · Game Master · Snack suspect</p>
-          <div class="profile-rule"><span>✦</span> THE NEXT TALE AWAITS <span>✦</span></div>
+          <strong>Daddy Depresso</strong>
+          <span class="portrait-caption">Player • Game Master • Story enjoyer</span>
+          <div class="portrait-bottom"><span>✦</span> EVERY GOOD GAME STARTS WITH A STORY <span>✦</span></div>
         </div>
-        <div class="floating-note note-top"><span aria-hidden="true">✧</span> A little magic</div>
-        <div class="floating-note note-bottom"><span aria-hidden="true">🥪</span> Sandwich? What sandwich?</div>
+        <div class="portrait-stripes" aria-hidden="true"><span></span><span></span><span></span></div>
       </div>
     </section>
 
-    <div class="section-rule shell" aria-hidden="true"><span>✧</span></div>
-
-    <section id="about" class="section shell about-section">
-      <div class="section-heading"><div><span class="kicker">A NOTE FROM THE TABLE</span><h2>A raccoon with a <em>story to tell.</em></h2></div><p>Sometimes he's part of the party. Sometimes he's the one deciding what waits behind the next door.</p></div>
-      <div class="about-grid">
-        <article class="feature-card"><span class="feature-glyph" aria-hidden="true">⚄</span><h3>At the table</h3><p>Whether playing a character or running a session, the goal is simple: make the story worth remembering.</p></article>
-        <article class="feature-card"><span class="feature-glyph" aria-hidden="true">✦</span><h3>Behind the screen</h3><p>Available as a Game Master / Dungeon Master for tabletop adventures. Curious about a game? Just reach out by email.</p></article>
-        <article class="feature-card"><span class="feature-glyph" aria-hidden="true">✧</span><h3>With the crew</h3><p>Part of the Dream Drops Crew: games, shared stories, jokes, and the kind of friendly chaos best enjoyed together.</p></article>
+    <section class="personal-intro" id="about">
+      <div class="container">
+        <div class="section-topline"><span>01 / A little about me</span><span>✧</span></div>
+        <div class="personal-layout">
+          <div><h2>More stories.<br><em>More good company.</em></h2></div>
+          <div class="personal-description">
+            <p>I enjoy story-based games, tabletop adventures, and sharing the fun with friends. Whether a session turns into something heroic, unexpectedly silly, or completely off-script, the best part is having a story to tell afterward.</p>
+            <p>I also love a little mischief. Just keep an eye on your sandwich — the raccoon has a talent for appearing from your blind spot at exactly the wrong time.</p>
+            <div class="interests"><span>Story-driven games</span><span>Tabletop roleplay</span><span>Playing with friends</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="stories" class="section shell story-section">
-      <div class="section-heading"><div><span class="kicker">PAGES FROM THE ADVENTURE BOOK</span><h2>Player one day. <em>Game Master</em> the next.</h2></div><p>Three tabletop video collections you shared — a little of both sides of the screen.</p></div>
+    <section class="section container" id="stories">
+      <div class="section-topline"><span>02 / At the table</span><span>✧</span></div>
+      <div class="heading-row"><div><h2>The adventures so far</h2><p>Three shared video collections: two as a player, and one from behind the Game Master's screen.</p></div><span class="handwritten">Your move.</span></div>
       <div class="story-grid">
-        <article class="story-card"><div class="story-image"><img src="https://i.ytimg.com/vi/FRVmoksciRg/hqdefault.jpg" alt="Video thumbnail for the first tabletop player playlist" loading="lazy"><span class="story-flag">As a player · I</span></div><div class="story-details"><h3>Adventures as a player</h3><p>Pull up a chair and follow one of his player-side tabletop adventures.</p><a href="https://www.youtube.com/watch?v=FRVmoksciRg&amp;list=PLdqlxY9kSpe0" target="_blank" rel="noopener noreferrer">Watch the playlist <span aria-hidden="true">↗</span></a></div></article>
-        <article class="story-card"><div class="story-image"><img src="https://i.ytimg.com/vi/8R5yICkMZn4/hqdefault.jpg" alt="Video thumbnail for the second tabletop player playlist" loading="lazy"><span class="story-flag">As a player · II</span></div><div class="story-details"><h3>Another seat at the table</h3><p>More choices, more stories, and probably a few rolls that went spectacularly wrong.</p><a href="https://www.youtube.com/watch?v=8R5yICkMZn4&amp;list=PL5420N1feOV-FDdE10HxclroHEqg-GqKD" target="_blank" rel="noopener noreferrer">Watch the playlist <span aria-hidden="true">↗</span></a></div></article>
-        <article class="story-card"><div class="story-image"><img src="https://i.ytimg.com/vi/TqJk7cQ72e0/hqdefault.jpg" alt="Video thumbnail for the tabletop game run by Daddy Depresso" loading="lazy"><span class="story-flag">Behind the GM screen</span></div><div class="story-details"><h3>Master of the next move</h3><p>Now behind the screen as a GM, turning choices, surprises, and stories into a game.</p><a href="https://www.youtube.com/watch?v=TqJk7cQ72e0&amp;list=PLQOAzzoGRT6s" target="_blank" rel="noopener noreferrer">See the GM sessions <span aria-hidden="true">↗</span></a></div></article>
+        <article class="story-card">
+          <a class="story-thumb" href="https://www.youtube.com/watch?v=FRVmoksciRg&amp;list=PLdqlxY9kSpe0" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/FRVmoksciRg/hqdefault.jpg" alt="Thumbnail from the first tabletop player adventure" loading="lazy"><span>View on YouTube ↗</span></a>
+          <div class="story-content"><span class="story-type">AS A PLAYER · I</span><h3>At the adventuring table</h3><p>Choices, conversations and unexpected turns. Watch the first collection of tabletop sessions.</p><a href="https://www.youtube.com/watch?v=FRVmoksciRg&amp;list=PLdqlxY9kSpe0" target="_blank" rel="noopener noreferrer">Watch the collection ↗</a></div>
+        </article>
+        <article class="story-card">
+          <a class="story-thumb" href="https://www.youtube.com/watch?v=8R5yICkMZn4&amp;list=PL5420N1feOV-FDdE10HxclroHEqg-GqKD" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/8R5yICkMZn4/hqdefault.jpg" alt="Thumbnail from the second tabletop player adventure" loading="lazy"><span>View on YouTube ↗</span></a>
+          <div class="story-content"><span class="story-type">AS A PLAYER · II</span><h3>Another chapter</h3><p>More sessions, another collection of memories, and more decisions to make along the way.</p><a href="https://www.youtube.com/watch?v=8R5yICkMZn4&amp;list=PL5420N1feOV-FDdE10HxclroHEqg-GqKD" target="_blank" rel="noopener noreferrer">Watch the collection ↗</a></div>
+        </article>
+        <article class="story-card">
+          <a class="story-thumb" href="https://www.youtube.com/watch?v=TqJk7cQ72e0&amp;list=PLQOAzzoGRT6s" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/TqJk7cQ72e0/hqdefault.jpg" alt="Thumbnail from a tabletop game run by Daddy Depresso" loading="lazy"><span>View on YouTube ↗</span></a>
+          <div class="story-content"><span class="story-type">AS GAME MASTER</span><h3>Behind the screen</h3><p>This time I'm the one guiding the adventure, building the situation, and seeing where the party takes it.</p><a href="https://www.youtube.com/watch?v=TqJk7cQ72e0&amp;list=PLQOAzzoGRT6s" target="_blank" rel="noopener noreferrer">See the GM sessions ↗</a></div>
+        </article>
       </div>
     </section>
 
-    <section id="card-trick" class="section shell trick-section">
-      <div class="trick-copy"><span class="kicker">A SMALL GAME OF FATE</span><h2>Go on. <em>Pick a card.</em></h2><p>A harmless trick from a raccoon with far too many ideas. It might reveal your next move… or the location of your missing lunch.</p><button type="button" class="button button-primary" id="draw-card">Flip my fate <span aria-hidden="true">✦</span></button><p class="microcopy">Just for fun. No dice, accounts, or sandwiches required.</p></div>
-      <div class="fate-area">
-        <div class="fate-decor" aria-hidden="true">✧</div>
-        <div class="fate-card" id="fate-card" aria-live="polite" aria-label="Magical fate card">
-          <div class="fate-card-inner">
-            <div class="fate-face fate-front"><div class="fate-corner">✦</div><img src="img/raccoon-mark.svg" alt="" width="93" height="93"><span>THE RACCOON'S DECK</span><strong>What happens next?</strong><small>✧ A story begins with a choice ✧</small></div>
-            <div class="fate-face fate-back"><div class="fate-corner">✦</div><small>YOUR CARD SAYS</small><strong id="fate-result">The stage is yours.</strong><span id="fate-detail">Press the button to reveal a twist.</span><div class="fate-sign">✧ Daddy Depresso ✧</div></div>
-          </div>
+    <section class="section videos-wrap" id="streams">
+      <div class="container">
+        <div class="section-topline"><span>03 / Latest on YouTube</span><span>✧</span></div>
+        <div class="heading-row"><div><h2>Something to watch</h2><p>Recent collaborations and personal livestreams, automatically refreshed with the YouTube API.</p></div><a href="https://www.youtube.com/@daddydepresso" target="_blank" rel="noopener noreferrer" class="quiet-link">The channel ↗</a></div>
+        <div class="feed-section">
+          <div class="feed-heading"><div><h3>With friends &amp; the crew</h3><p>Four newest public videos found in the three tabletop collections above.</p></div><button type="button" class="refresh-btn" data-refresh><span aria-hidden="true">↻</span> Refresh</button></div>
+          <div id="collab-videos" class="video-grid" aria-live="polite"></div>
+          <p id="collab-status" class="feed-status" role="status"></p>
         </div>
-        <p class="fate-hint">A little bit of magic. A lot of mischief.</p>
+        <div class="feed-section personal-feed">
+          <div class="feed-heading"><div><h3>On my channel</h3><p>Three newest public livestreams from Daddy Depresso.</p></div><a class="quiet-link" href="https://www.youtube.com/@daddydepresso/streams" target="_blank" rel="noopener noreferrer">All streams ↗</a></div>
+          <div id="personal-videos" class="video-grid" aria-live="polite"></div>
+          <p id="personal-status" class="feed-status" role="status"></p>
+        </div>
+        <div class="feed-footer"><span id="feed-updated">Awaiting YouTube feed</span><span>Public livestreams and playlist videos only</span></div>
       </div>
     </section>
 
-    <section id="streams" class="section shell video-section">
-      <div class="section-heading"><div><span class="kicker">STORIES IN MOTION</span><h2>Recent adventures, <em>fresh from YouTube.</em></h2></div><p>These sections refresh automatically when the YouTube API is configured. You can refresh them manually, too.</p></div>
-      <div class="feed-section">
-        <div class="feed-heading"><div><h3><span aria-hidden="true">✧</span> With friends &amp; the crew</h3><p>The 4 newest videos from the three provided tabletop collaboration playlists.</p></div><button type="button" class="refresh-btn" data-refresh aria-label="Refresh YouTube videos"><span aria-hidden="true">↻</span> Refresh</button></div>
-        <div id="collab-videos" class="video-grid" aria-live="polite"></div>
-        <p class="feed-status" id="collab-status" role="status"></p>
+    <section class="section container magic-section" id="card-trick">
+      <div class="section-topline"><span>04 / A small distraction</span><span>✧</span></div>
+      <div class="magic-shell">
+        <div class="magic-copy"><span class="overline">ONE LITTLE CARD TRICK</span><h2>Care to try <em>your luck?</em></h2><p>Even a quiet raccoon can have a trick up his sleeve. Flip a card for a tiny twist of fate. Whatever you draw, your sandwich is probably in danger.</p><button type="button" id="draw-card" class="btn btn-primary">Flip a card <span aria-hidden="true">✦</span></button><p class="fineprint">Just for fun — no account or sign-up needed.</p></div>
+        <div class="magic-illustration"><div class="fate-card" id="fate-card" aria-live="polite" aria-label="Fate card"><div class="fate-card-inner"><div class="fate-face fate-front"><span class="card-corner">✦</span><div class="card-diamond">✧</div><span class="card-label">A SMALL TWIST OF FATE</span><strong>Pick a card</strong><span class="card-footer">DADDY DEPRESSO · NO. 01</span></div><div class="fate-face fate-back"><span class="card-corner">✦</span><span class="card-label">YOUR NEXT MOVE</span><strong id="fate-result">A story begins.</strong><p id="fate-detail">Flip to see what happens.</p><span class="card-footer">THE RACCOON'S DECK</span></div></div></div></div>
       </div>
-      <div class="feed-section personal-feed"><div class="feed-heading"><div><h3><span aria-hidden="true">☾</span> On his own channel</h3><p>The 3 newest public livestreams from Daddy Depresso's own YouTube channel.</p></div><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@daddydepresso/streams">All streams <span aria-hidden="true">↗</span></a></div>
-        <div id="personal-videos" class="video-grid" aria-live="polite"></div>
-        <p class="feed-status" id="personal-status" role="status"></p>
-      </div>
-      <div class="feed-footer"><span id="feed-updated">✦ Awaiting live feed setup</span><a href="https://www.youtube.com/@daddydepresso" target="_blank" rel="noopener noreferrer">Visit his YouTube channel ↗</a></div>
     </section>
 
-    <section id="contact" class="section shell contact-section">
-      <div class="contact-card"><div class="contact-stamp" aria-hidden="true">✉</div><div class="contact-content"><span class="kicker">YOUR NEXT SESSION STARTS HERE</span><h2>Need a <em>Game Master?</em></h2><p>Daddy Depresso is open to more tabletop adventures and is available as a Game Master / Dungeon Master. No form to fill out — just send an email to ask about availability and your idea.</p><div class="contact-actions"><a class="button button-primary" href="mailto:josephpenax@gmail.com?subject=Tabletop%20GM%20Inquiry">Send an email ↗</a><a class="email-link" href="mailto:josephpenax@gmail.com">josephpenax@gmail.com</a><button type="button" class="copy-button" id="copy-email" aria-label="Copy email address">Copy</button></div></div><div class="contact-stars" aria-hidden="true">✦ <span>✧</span> ✦</div></div>
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div><div class="section-topline"><span>05 / Let's make a story</span><span>✧</span></div><span class="overline">GAME MASTER / DUNGEON MASTER</span><h2>Have a game in mind?</h2><p>I'm open to more tabletop adventures and available as a Game Master. If you'd like to ask about a session or an idea, an email is the easiest way to get in touch.</p></div>
+        <div class="contact-info"><span class="email-title">EMAIL FOR GM INQUIRIES</span><a class="email-address" href="mailto:josephpenax@gmail.com?subject=Game%20Master%20Inquiry">josephpenax@gmail.com</a><div class="contact-buttons"><a class="btn btn-rose" href="mailto:josephpenax@gmail.com?subject=Game%20Master%20Inquiry">Write an email ↗</a><button type="button" class="copy-button" id="copy-email">Copy address</button></div><p>Just your usual email app — no forms to fill out.</p></div>
+      </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><div class="footer-brand"><img src="img/raccoon-mark.svg" width="36" height="36" alt=""><div><strong>Daddy Depresso</strong><small>A story is better when it's shared.</small></div></div><div class="footer-links"><a href="https://www.youtube.com/@daddydepresso" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="https://creatorpromote.com/dreamdropscrew" target="_blank" rel="noopener noreferrer">Dream Drops Crew ↗</a><a href="mailto:josephpenax@gmail.com">Email ↗</a></div><small class="footer-note">Made with a little magic and probably a stolen sandwich. © <span id="year">2026</span></small></div></footer>
+
+  <footer class="site-footer"><div class="container footer-inner"><a href="#home" class="footer-brand"><img src="https://yt3.googleusercontent.com/a0OaZ4_9E1_KcuoBU8kqcH4RQxzQHf5imBizEcBz5eeHgy_JinWqKPQIFhvuP7adcZZ470eJaA=s160-c-k-c0x00ffffff-no-rj" width="36" height="36" alt=""><span><strong>Daddy Depresso</strong><small>One story at a time.</small></span></a><div class="footer-links"><a href="https://www.youtube.com/@daddydepresso" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="https://creatorpromote.com/dreamdropscrew" target="_blank" rel="noopener noreferrer">Dream Drops Crew ↗</a><a href="mailto:josephpenax@gmail.com">Email ↗</a></div><p class="copyright">© <span id="year">2026</span> · Keep your sandwiches close. 🥪</p></div></footer>
 </body>
 </html>
