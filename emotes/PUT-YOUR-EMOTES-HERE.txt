@@ -1,0 +1,3 @@
+Put Daddy Depresso's real .gif, .png, .webp, .jpg, .jpeg, .apng, or .avif files in this folder.
+Then regenerate emotes.json using the PowerShell script in the ZIP's root.
+The gallery does not guess filenames and doesn't fetch the folder directory automatically.

@@ -1,0 +1,107 @@
+/* Daddy Depresso's Emote Gallery — isolated styles; does not modify css/style.css */
+:root { color-scheme: light; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body.emotes-page { margin:0; min-width: 280px; background:#fbf7f9; color:#122932; font-family:'DM Sans',system-ui,sans-serif; line-height:1.6; }
+.emotes-page button, .emotes-page input, .emotes-page select { font:inherit; }
+.emotes-page button { cursor:pointer; }
+.emotes-page a { color:inherit; text-decoration:none; }
+.emotes-page a:focus-visible, .emotes-page button:focus-visible, .emotes-page input:focus-visible, .emotes-page select:focus-visible { outline:3px solid #aa7dce; outline-offset:3px; }
+.emote-container { width:min(1150px,calc(100% - 48px)); margin-inline:auto; }
+.emote-skip { position:absolute; transform:translateY(-200%); z-index:15; top:10px; left:16px; padding:9px 16px; background:white; border-radius:10px; }
+.emote-skip:focus { transform:none; }
+.emote-header { background:#122932; color:#fff; position:relative; z-index:5; border-bottom:1px solid rgba(255,255,255,.1); }
+.emote-header-inner { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:86px; }
+.emote-brand { display:flex; align-items:center; gap:12px; flex-shrink:0; }
+.emote-brand-img { display:grid; place-items:center; width:48px; height:48px; border:2px solid #e3c0d3; background:#e3c0d3; border-radius:50%; overflow:hidden; }
+.emote-brand-img img { width:100%; height:100%; object-fit:cover; }
+.emote-brand strong, .emote-brand small { display:block; line-height:1.25; }
+.emote-brand strong { font-family:'Libre Baskerville',serif; font-size:1rem; letter-spacing:-.03em; }
+.emote-brand small { opacity:.72; font-size:.67rem; margin-top:4px; }
+.emote-nav { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:5px; }
+.emote-nav a { padding:9px 13px; border-radius:100px; font-size:.83rem; font-weight:700; opacity:.83; white-space:nowrap; }
+.emote-nav a:hover, .emote-nav a[aria-current] { background:rgba(227,192,211,.17); opacity:1; }
+.emote-nav a[aria-current] { color:#f5d7e3; }
+.emote-hero { padding-block:clamp(48px,7vw,100px); display:grid; grid-template-columns:1.12fr .88fr; align-items:center; gap:clamp(20px,5vw,90px); position:relative; }
+.emote-hero::before { content:''; position:absolute; left:-9%; top:12%; width:350px; height:350px; border-radius:50%; background:radial-gradient(circle,rgba(227,192,211,.55),transparent 70%); pointer-events:none; z-index:-1; }
+.emote-kicker, .emote-section-eyebrow { color:#2c514c; font-weight:800; font-size:.73rem; letter-spacing:.13em; text-transform:uppercase; }
+.emote-kicker span { color:#a8577e; margin-right:6px; }
+.emote-hero h1, .emote-section-heading h2, .emote-outro h2 { font-family:'Libre Baskerville',serif; letter-spacing:-.057em; line-height:1.13; }
+.emote-hero h1 { margin:18px 0 21px; font-size:clamp(2.45rem,5.3vw,4.95rem); font-weight:700; }
+.emote-hero h1 em { color:#a8577e; font-weight:400; }
+.emote-hero-copy > p { max-width:540px; font-size:1.03rem; color:#576066; line-height:1.9; }
+.emote-hero-links { display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top:28px; }
+.emote-primary-link, .emote-secondary-link { display:inline-flex; gap:15px; align-items:center; justify-content:center; min-height:49px; padding:12px 21px; border-radius:13px; font-size:.85rem; font-weight:800; }
+.emote-primary-link { background:#2c514c; color:white!important; box-shadow:0 10px 20px rgba(44,81,76,.15); }
+.emote-primary-link:hover { background:#122932; transform:translateY(-1px); }
+.emote-secondary-link { border:1px solid #d6ccd1; background:#fff; }
+.emote-secondary-link:hover { background:#f5d7e3; }
+.emote-hero-art { min-height:370px; position:relative; display:grid; place-items:center; }
+.emote-hero-art::before { content:''; width:min(100%,410px); height:330px; position:absolute; border-radius:49% 51% 46% 54%; background:#e3c0d3; transform:rotate(-11deg); box-shadow:inset 0 0 0 16px rgba(255,255,255,.12); }
+.emote-hero-art::after { content:''; width:280px; height:245px; position:absolute; border:1px dashed rgba(44,81,76,.32); border-radius:50%; transform:rotate(17deg); }
+.emote-polaroid { width:248px; background:white; padding:20px 20px 24px; box-shadow:0 25px 48px rgba(18,41,50,.16); border:1px solid #eee3e8; border-radius:7px; transform:rotate(6deg); position:relative; z-index:1; display:grid; justify-items:center; text-align:center; }
+.emote-polaroid-label { font-size:.62rem; font-weight:800; letter-spacing:.13em; margin-bottom:13px; }
+.emote-polaroid img { width:170px; height:170px; object-fit:cover; border-radius:50%; border:8px solid #f5d7e3; background:#2c514c; }
+.emote-polaroid-note { margin-top:19px; font-family:'Libre Baskerville',serif; font-style:italic; font-size:.8rem; color:#805a74; }
+.emote-hero-star { position:absolute; z-index:2; color:#a8577e; font-size:2.7rem; }
+.star-one { top:13%; left:10%; } .star-two { right:8%; bottom:13%; font-size:1.8rem; }
+.emote-flourish { position:absolute; bottom:0; right:28%; color:#aa7dce; letter-spacing:14px; }
+.emote-collection { background:linear-gradient(180deg,#f5edf2,#fff 50%); border-top:1px solid #ede1e6; padding-block:70px 100px; }
+.emote-section-eyebrow { display:flex; align-items:center; justify-content:space-between; padding-bottom:15px; border-bottom:1px solid #d9cbd1; }
+.emote-section-heading { display:flex; justify-content:space-between; align-items:center; gap:25px; margin:35px 0 28px; }
+.emote-section-heading h2 { margin:0 0 9px; font-size:clamp(1.9rem,3.6vw,3rem); }
+.emote-section-heading p { margin:0; color:#667076; font-size:.94rem; }
+.emote-count { display:inline-flex; white-space:nowrap; border-radius:99px; padding:9px 14px; color:#2c514c; background:#e1ebe7; font-size:.81rem; font-weight:800; }
+.emote-controls { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding:18px; background:#fff; border:1px solid #e8dce2; box-shadow:0 8px 30px rgba(18,41,50,.04); border-radius:17px; }
+.emote-search-wrap { display:flex; align-items:center; gap:9px; border:1px solid #dcd5d9; background:#fbfafb; border-radius:11px; min-width:180px; flex:1 1 230px; padding:0 14px; min-height:46px; }
+.emote-search-wrap span { font-size:1.8rem; line-height:1; color:#8d6b86; }
+.emote-search-wrap input { border:0; outline:0; background:transparent; min-width:0; width:100%; font-size:.87rem; color:#122932; }
+.emote-filters { display:flex; flex-wrap:wrap; gap:6px; }
+.emote-filter { border:1px solid transparent; background:#f6f0f4; color:#555f66; padding:11px 14px; border-radius:10px; font-weight:750; font-size:.78rem; white-space:nowrap; }
+.emote-filter.is-active { background:#2c514c; color:white; }
+.emote-filter:hover:not(.is-active) { border-color:#d4b5c8; }
+.emote-sort-wrap { display:flex; align-items:center; gap:9px; font-weight:700; color:#576066; font-size:.8rem; }
+.emote-sort-wrap select { border:1px solid #dcd5d9; background:#fbfafb; border-radius:10px; color:#122932; padding:10px 10px; }
+.emote-status { min-height:1.2em; margin:15px 0 12px; color:#697378; font-size:.82rem; }
+.emote-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:19px; }
+.emote-card { min-width:0; border:1px solid #eee0e7; box-shadow:0 7px 25px rgba(18,41,50,.045); background:#fff; border-radius:16px; overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .18s, transform .18s; }
+.emote-card:hover { box-shadow:0 16px 35px rgba(18,41,50,.1); transform:translateY(-3px); }
+.emote-preview { aspect-ratio:1; display:grid; place-items:center; padding:16px; background-color:#f7f2f6; background-image:linear-gradient(45deg,rgba(255,255,255,.45) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.45) 75%),linear-gradient(45deg,rgba(255,255,255,.45) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.45) 75%); background-size:24px 24px; background-position:0 0,12px 12px; }
+.emote-preview img { display:block; max-width:100%; max-height:175px; width:auto; height:auto; object-fit:contain; filter:drop-shadow(0 7px 6px rgba(0,0,0,.12)); }
+.emote-preview img.is-broken { display:none; }
+.emote-preview-fallback { font-size:1.9rem; color:#a8577e; }
+.emote-details { padding:15px; display:flex; flex-direction:column; flex:1; gap:10px; }
+.emote-name { font-size:.94rem; line-height:1.3; font-weight:800; overflow-wrap:anywhere; margin:0; }
+.emote-meta { color:#887786; font-size:.72rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; margin-top:-3px; }
+.emote-card-actions { display:flex; gap:7px; margin-top:auto; }
+.emote-copy, .emote-open { display:inline-flex; justify-content:center; align-items:center; border-radius:10px; min-height:39px; font-size:.78rem; font-weight:800; }
+.emote-copy { flex:1; border:0; background:#2c514c; color:#fff; padding:8px; }
+.emote-copy:hover { background:#122932; }
+.emote-copy.is-copied { background:#557a4c; }
+.emote-open { border:1px solid #ded2da; background:#f8f3f7; width:41px; }
+.emote-open:hover { background:#e3c0d3; }
+.emote-empty { margin:22px auto 0; max-width:480px; border:1px dashed #c9afbf; background:#fff; border-radius:19px; text-align:center; padding:47px 22px; }
+.emote-empty[hidden] { display:none; }
+.emote-empty h3 { margin:9px 0 6px; font-family:'Libre Baskerville',serif; font-size:1.35rem; }
+.emote-empty p { color:#6b7277; font-size:.9rem; }
+.empty-icon { color:#a8577e; font-size:3rem; }
+.emote-reset { border:0; border-radius:9px; padding:10px 17px; color:white; background:#2c514c; font-weight:800; }
+.emote-outro { padding-block:50px 80px; }
+.emote-outro-card { background:#2c514c; color:#fff; border-radius:20px; padding:28px 34px; display:flex; align-items:center; gap:24px; }
+.emote-outro-card>span { font-size:2.6rem; }
+.emote-outro-card>div { flex:1; }
+.emote-outro h2 { margin:0 0 7px; font-size:1.4rem; }
+.emote-outro p { color:#e4efea; font-size:.89rem; margin:0; }
+.emote-outro a { background:#f5d7e3; color:#122932; border-radius:11px; padding:13px 18px; font-size:.8rem; font-weight:800; white-space:nowrap; }
+.emote-footer { background:#122932; color:#fff; padding-block:30px; }
+.emote-footer-inner { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:18px; }
+.emote-footer-inner strong, .emote-footer-inner small { display:block; }
+.emote-footer-inner strong { font-family:'Libre Baskerville',serif; font-size:.95rem; }
+.emote-footer-inner small { font-size:.75rem; opacity:.63; margin-top:4px; }
+.emote-footer nav { display:flex; flex-wrap:wrap; gap:14px; }
+.emote-footer nav a, .emote-footer-inner>span { font-size:.78rem; color:#f5d7e3; }
+.emote-footer nav a:hover { text-decoration:underline; }
+@media(max-width:960px) { .emote-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } .emote-nav a { padding:8px 9px; } .emote-header-inner { flex-wrap:wrap; padding-block:14px; } }
+@media(max-width:760px) { .emote-container { width:min(100% - 32px,1150px); } .emote-header-inner { align-items:flex-start; gap:12px; } .emote-header .emote-nav { width:100%; justify-content:flex-start; } .emote-hero { grid-template-columns:1fr; padding-block:58px 45px; gap:20px; } .emote-hero-art { min-height:320px; } .emote-hero-art::before { height:260px; width:300px; max-width:90%; } .emote-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .emote-section-heading { align-items:flex-start; flex-direction:column; } .emote-outro-card { flex-wrap:wrap; } }
+@media(max-width:480px) { .emote-brand strong { font-size:.85rem; } .emote-nav { gap:0; } .emote-nav a { font-size:.73rem; padding:7px 9px; } .emote-hero h1 { font-size:2.55rem; } .emote-polaroid { width:220px; } .emote-polaroid img { width:140px; height:140px; } .emote-grid { gap:12px; } .emote-details { padding:12px; } .emote-name { font-size:.82rem; } .emote-card-actions { flex-wrap:wrap; } .emote-copy { min-width:70px; } .emote-preview img { max-height:130px; } .emote-filter { font-size:.75rem; padding:9px 11px; } .emote-controls { padding:12px; } .emote-outro-card { padding:22px; } .emote-outro a { width:100%; text-align:center; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .emote-card, .emote-primary-link { transition:none; } }
